@@ -1,0 +1,662 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+main{
+	background-color: #f5f5f5;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+ul li{
+	list-style: none;
+}
+section{
+	margin-top: 6rem;
+}
+
+.section-title{
+	text-align: center;
+	margin-bottom: 7rem;
+}
+.section-title span{
+	text-transform: capitalize;
+	color: #4fa34f;
+	font-size: 2rem;
+}
+.section-title h1{
+	text-transform: capitalize;
+	color: #004e00;
+	font-size: 3rem;
+	margin: 0;
+}
+
+.bg-img-set{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.d-flex{
+	display: flex;
+}
+.text-center{
+	text-align: center;
+}
+.justify-center{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.justify-space-between{
+	justify-content: space-between;
+}
+.align-center{
+	align-items: center;
+}
+
+/*****************************************/
+
+#navigation{
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+#navigation a{
+	color: #fff;
+}
+
+#navigation .flaticon-gardener{
+	color: #fff;
+}
+
+/*****************************/
+
+header{
+	height: 100vh;
+	background-image: linear-gradient(to bottom, #0000008f, #0000004f),url("https://images.pexels.com/photos/6500749/pexels-photo-6500749.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+header .row{
+	display: flex;
+	height: 450px;
+	align-items: center;
+}
+
+header .hero-text span{
+	font-size: 1.8rem;
+	text-transform: capitalize;
+	color: #fff;
+}
+
+header .hero-text h1{
+	font-size: 4rem;
+	text-transform: capitalize;
+	color: #fff;
+	margin-bottom: 1.5rem;
+}
+
+header .hero-text p{
+	font-size: 1.6rem;
+	text-transform: capitalize;
+	color: #cccccc;
+	line-height: 2.8rem;
+	margin-bottom: 2rem;
+}
+
+/*****************************/
+main .agricultural-market{
+	padding-top: 30px;
+}
+main .agricultural-market .cap-img{
+	height: 400px;
+}
+main .agricultural-market .p{
+	color: green;
+	font-size: 1.8rem;
+	text-transform: capitalize;
+}
+
+main .agricultural-market h1{
+	color: darkgreen;
+	margin: 15px 0;
+	font-weight: bold;
+}
+
+main .agricultural-market p{
+	color: #444;
+	line-height: 2.4rem;
+	font-size: 1.6rem;
+}
+
+main .biography-area h3{
+	color: green;
+}
+
+
+/*****************************/
+
+.total-product{
+	padding: 4.8rem 0;
+	background-image: linear-gradient(to bottom, #1c6b1ca2, #1c6b1c83), url('https://images.pexels.com/photos/6508404/pexels-photo-6508404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.total-product .coun-num .icon{
+	width: 35px;
+	height: 35px;
+	margin-right: 1.8rem;
+	background-image: url(../images/save.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.total-product .coun-num .text h1{
+	color: #fff;
+	margin-bottom: 1px;
+}
+.total-product .coun-num .text p{
+	color: #fff;
+	font-weight: bold;
+}
+
+/*****************************/
+
+.offer-zone .service{
+	background-color: #fff;
+	padding: 2.5rem;
+}
+
+.offer-zone .service .img-icon{ 
+	width: 70px;
+	height: 70px;
+	border-radius: 0 50% 50% ;
+	padding: 15px;
+	background-color: #4fa34f;
+}
+
+.offer-zone .service .text h3{
+	color: green;
+	text-transform: capitalize;
+}
+
+.offer-zone .service .text p{
+	color: #555;
+	font-size: 1.7rem;
+}
+
+/*****************************/
+
+.projects-area .project{
+	position: relative;
+	height: 350px;
+	border-radius: 4px;
+	margin-top: 20px;
+}
+
+.project .text{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+    transition: all 0.4s;
+}
+
+.project .text::before, .project .text::after{
+	position: absolute;
+    content: '';
+    width: 0%;
+    height: 0%;
+    background-color: #2d5308bd;
+    transition: all 0.8s;
+    z-index: 1;
+}
+
+.project .text::before{
+    top: 0;
+    left: 0;
+}
+.project .text::after{
+    bottom: 0;
+    right: 0;
+}
+
+.project .text:hover{
+    opacity: 1;
+}
+
+.text:hover::after, .text:hover::before{
+    height: 50%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.projects-area .project .text h3 a{
+	color: #fff;
+}
+
+.projects-area .project .text span{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.6rem;
+}
+
+/*****************************/
+
+.assesment-area{
+	background-color: #4fa34f;
+}
+.assesment-area .service{
+	margin-top: 1.8rem;
+}
+.assesment-area .service .icon{
+	width: 60px;
+	height: 60px;
+	border: 1px solid #cfcfcf;
+	padding: 1.3rem;
+	border-radius: 50% 0 50% 50%;
+	margin-right: 1.8rem; 
+}
+
+.assesment-area .service .text h2{
+	color: #fff;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.assesment-area .service .text span{
+	color: #d4d4d4;
+	font-size: 1.5rem;
+	text-transform: capitalize;
+}
+
+/*****************************/
+
+.client-carousel .user-img{
+	position: relative;
+	margin-right: 1rem;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 3px solid #4fa34f;
+	background-image: url('https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+.client-carousel .text{
+	width: 70%;
+}
+
+.client-carousel .text p{
+	color: #555;
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+}
+
+.client-carousel .text h1{
+	font-size: 2.2rem;
+	color: #004e00;
+}
+
+.client-carousel .text span{
+	font-size: 1.6rem;
+	color: #4fa34f;
+}
+
+/*****************************/
+
+.form-area{
+	background-color: #fff;
+}
+.form-area form .form-control{
+	height: 4.5rem;
+	border: navajowhite;
+	background-color: #eeeeee;
+}
+
+.form-area form .btn{
+	 background-color: #4fa34f;
+	 color: #fff;
+	 font-size: 1.5rem;
+	 padding: 1rem 0;
+}
+
+/*****************************/
+
+.recent-area h4{
+	color: #004e00;
+}
+
+/*****************************/
+
+.plans-pricing{
+	background-color: #fff;
+}
+
+.plans-pricing .price-box{
+	padding: 3rem;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 1px 5px 10px #999;
+}
+
+.plans-pricing .price-box h3{
+	text-transform: uppercase;
+	color: #004e00;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.plans-pricing .price-box h1{
+	text-transform: uppercase;
+	color: #004e00;
+	font-size: 2.2rem;
+	font-weight: bold;
+}
+
+.plans-pricing .price-box ul li{
+	list-style: none;
+	margin-top: 1.3rem;
+	font-weight: bold;
+}
+.plans-pricing .price-box .btn{
+	border-radius: 1.5rem;
+	margin-top: 1.6rem;
+}
+
+/*****************************/
+
+.build-garden{
+	text-align: center;
+	padding: 5rem 0;
+	background-image: url("https://images.pexels.com/photos/1179863/pexels-photo-1179863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.build-garden h2{
+	color: #fff;
+	margin-bottom: 2rem;
+}
+
+/*****************************/
+
+.footer-list-area{
+	background-color: #011101;
+	padding: 5rem 0;
+}
+
+.footer-list-area h3{
+	color: #fff;
+	font-size: 2.2rem;
+	margin-bottom: 3.5rem;
+}
+
+.footer-list-area p{
+	color: #fff;
+	font-size: 1.6rem;
+}
+
+.footer-list-area .social-icon{
+	margin-top: 4.8rem;
+}
+
+.footer-list-area .social-icon a{
+	border-radius: 50% 0 50% 50%;
+	padding: 1rem;
+	margin-right: 1.4rem;
+	font-size: 1.8rem;
+	background-color: #004e00;
+	color: #fff;
+}
+
+.footer-list-area .social-icon a span{
+	display: inline-block;
+}
+
+.footer-list-area .img-us{
+	width: 85px;
+	height: 85px;
+	display: block;
+	margin-right: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.footer-list-area .text h4{
+	color: #999;
+}
+
+.footer-list-area .text a{
+	color: #4fa34f;
+}
+
+.footer-list-area .footer-list li{
+	color: #999;
+	margin-top: 1.5rem;
+	font-size: 1.6rem;
+	text-transform: capitalize;
+}
+
+.footer-list-area .footer-list li .icon{
+	color: #3bd83b;
+}
+
+.footer-list-area .copyright{
+	margin: 0;
+	text-align: center;
+	font-size: 1.7rem;
+	color: #cfcfcf;
+	margin-top: 5.5rem;
+}
+
+
+/************************ END ******************/
+
+@media (max-width:770px) {
+
+	.col-sm-6{
+		margin-bottom: 10px;
+	}
+
+	section{
+		margin-top: 4rem;
+	}
+	.section-title{
+		margin-bottom: 4rem;
+	}
+	.section-title h1{
+		font-size: 2.5rem;
+	}
+
+/************************************/	
+
+	header{
+		height: 100vh;
+	}
+	
+	header .row{
+		display: flex;
+		height: 450px;
+	}
+	
+	header .hero-text span{
+		font-size: 1.5rem;
+	}
+	
+	header .hero-text h1{
+		font-size: 3rem;
+	}
+	
+	header .hero-text p{
+		font-size: 1.4rem;
+		line-height: 2.5rem;
+		margin-bottom: 2rem;
+	}
+
+/************************************/
+
+	main .agricultural-market{
+		padding-top: 30px;
+	}
+	main .agricultural-market .cap-img{
+		height: auto;
+	}
+
+	main .agricultural-market .p{
+		font-size: 1.8rem;
+	}
+
+	main .agricultural-market h1{
+		margin: 15px 0;
+		font-size: 2.5rem;
+	}
+
+	main .agricultural-market p{
+		line-height: 2.2rem;
+		font-size: 1.6rem;
+	}
+/************************************/
+	.total-product{
+		padding: 4.8rem 0;
+	}
+
+	.total-product .coun-num .text h1{
+		font-size: 2.8rem;
+	}
+	.total-product .coun-num .text p{
+		font-weight: normal;
+	}
+/************************************/
+
+	.offer-zone .service{
+		padding: 2rem;
+	}
+
+	.offer-zone .service .text h3{
+		font-size: 2rem;
+	}
+
+	.offer-zone .service .text p{
+		font-size: 1.5rem;
+	}
+
+	/*****************************/
+
+	.assesment-area .service{
+		margin-top: 1.5rem;
+	}
+	.assesment-area .service .icon{
+		width: 45px;
+		height: 45px;
+		padding: 0.8rem;
+		margin-right: 1.8rem; 
+	}
+
+	.assesment-area .service .text h2{
+		font-size: 1.7rem;
+		margin: 0;
+	}
+
+	.assesment-area .service .text span{
+		font-size: 1.3rem;
+	}
+
+	.plans-pricing .price-box{
+		padding: 3rem;
+		text-align: center;
+	}
+
+	.plans-pricing .price-box h3{
+		font-size: 1.8rem;
+	}
+
+	.plans-pricing .price-box h1{
+		font-size: 2.2rem;
+		font-weight: bold;
+	}
+
+	.plans-pricing .price-box ul li{
+		margin-top: 1.3rem;
+	}
+	.plans-pricing .price-box .btn{
+		border-radius: 1.5rem;
+		margin-top: 1.6rem;
+	} */
+
+	/*****************************/
+
+	.build-garden h2{
+		font-size: 3rem;
+		margin-bottom: 2rem;
+	}
+
+	/*****************************/
+
+	.footer-list-area{
+		padding: 5rem 0;
+	}
+
+	.footer-list-area h3{
+		font-size: 2.1rem;
+		/* margin-bottom: 3.5rem; */
+	}
+
+	.footer-list-area p{
+		font-size: 1.5rem;
+	}
+
+	.footer-list-area .social-icon{
+		margin-top: 4.8rem;
+	}
+
+	.footer-list-area .img-us{
+		width: 100px;
+		height: 85px;
+		margin-right: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.footer-list-area .text h4{
+		font-size: 1.7rem;
+	}
+
+
+	.footer-list-area .footer-list li{
+		margin-top: 1.5rem;
+		font-size: 1.5rem;
+	}
+
+	.footer-list-area .copyright{
+		font-size: 1.5rem;
+		margin-top: 5rem;
+	}
+
+}
+
+/*-----------------------------------------*/
+
+@media (max-width:430px) {
+
+	.section-title{
+		margin-bottom: 2rem;
+	}
+	.section-title span{
+		font-size: 1.6rem;
+		margin-bottom: 10px;
+	}
+	.section-title h1{
+		font-size: 2.5rem;
+	}
+
+	header{
+		height: 480px;
+	}
+}
