@@ -159,7 +159,7 @@ header nav li a:hover:after {
   width: 100%;
 }
 
-header .toggle-btn {
+header #toggle-btn {
   display: none;
 }
 
@@ -173,7 +173,8 @@ header .toggle-btn {
 }
 
 .hero .container {
-  height: 110vh;
+  height: 102vh;
+  max-height: 768px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,6 +357,7 @@ header .toggle-btn {
 .projs .item .details span {
   display: block;
   margin-top: 20px;
+  font-weight: bold;
 }
 
 .projs .item .details p {
@@ -468,6 +470,10 @@ footer p {
 
 footer .footer-social {
   margin-top: 20px;
+}
+
+footer .footer-social[cursor="disable"] {
+  cursor: not-allowed;
 }
 
 footer .footer-social .fa {
@@ -715,7 +721,7 @@ footer .copy-right {
 
 @media only screen and (max-width: 767px) {
   .container {
-    max-width: 99%;
+    max-width: 98%;
   }
   .divide-1-s {
     width: 100%;
@@ -724,9 +730,9 @@ footer .copy-right {
   }
   /*-----------------------------------------*/
   header {
-    background-color: #110149;
+    background-color: #575658;
     border-bottom: 1px solid #999;
-    padding: 10px;
+    padding: 9px 13px;
   }
   header .logo h1 {
     font-size: 26px;
@@ -739,8 +745,7 @@ footer .copy-right {
     display: none;
     width: 100%;
     margin-top: 5px;
-    border-top: 2px solid #8f8f8f;
-    background-color: #110149;
+    background-color: #575658;
     margin-bottom: 100px;
   }
   header nav ul {
@@ -762,14 +767,57 @@ footer .copy-right {
     width: 100%;
     height: 1px;
   }
-  header .toggle-btn {
-    display: block;
+  header #toggle-btn {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border: none;
-    font-size: 22px;
     border-radius: 5px;
-    padding: 3px 20px;
-    background-color: #999;
-    color: #ffffff;
+    padding: 15px 20px;
+    background: none;
+  }
+  header #toggle-btn::before, header #toggle-btn::after {
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: 2px;
+    background-color: #5dfd00;
+    -webkit-transition: 0.4s linear;
+    transition: 0.4s linear;
+  }
+  header #toggle-btn::before {
+    -webkit-box-shadow: 0 7.5px 0 #5dfd00;
+            box-shadow: 0 7.5px 0 #5dfd00;
+    -webkit-transform: translateY(-9px);
+            transform: translateY(-9px);
+  }
+  header #toggle-btn::after {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
+  }
+  header #toggle-btn.active::before {
+    width: 100%;
+    height: 1px;
+    background-color: #ff0000;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  header #toggle-btn.active::after {
+    width: 100%;
+    height: 1px;
+    background-color: #ff0000;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
   /*-----------------------------------------*/
   .skill .item-img .bg-img {
