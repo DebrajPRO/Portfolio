@@ -302,7 +302,6 @@ header #toggle-btn {
   position: absolute;
   background-image: -webkit-gradient(linear, left top, right top, from(#e1f84d), color-stop(#f0db2d), color-stop(#fabc1a), color-stop(#ff9d1c), color-stop(#ff7d2a), color-stop(#fe6c2b), color-stop(#fd592f), color-stop(#fa4333), color-stop(#fc3929), color-stop(#fd2d1f), color-stop(#fe1e12), to(#ff0000));
   background-image: linear-gradient(to right, #e1f84d, #f0db2d, #fabc1a, #ff9d1c, #ff7d2a, #fe6c2b, #fd592f, #fa4333, #fc3929, #fd2d1f, #fe1e12, #ff0000);
-  width: 90%;
   height: 5px;
   border-radius: 10px;
   -webkit-transform: scaleX(0);
@@ -311,6 +310,30 @@ header #toggle-btn {
           transform-origin: left;
   -webkit-animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
           animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.skill .item-skill .details .progress-item .progress-bar .html {
+  width: 95%;
+}
+
+.skill .item-skill .details .progress-item .progress-bar .css {
+  width: 80%;
+}
+
+.skill .item-skill .details .progress-item .progress-bar .sass {
+  width: 70%;
+}
+
+.skill .item-skill .details .progress-item .progress-bar .boostrap {
+  width: 74%;
+}
+
+.skill .item-skill .details .progress-item .progress-bar .jvst {
+  width: 20%;
+}
+
+.skill .item-skill .details .progress-item .progress-bar .jquery {
+  width: 48%;
 }
 
 @-webkit-keyframes animate {
@@ -730,7 +753,7 @@ footer .copy-right {
   }
   /*-----------------------------------------*/
   header {
-    background-color: #575658;
+    background-color: #000000;
     border-bottom: 1px solid #999;
     padding: 9px 13px;
   }
@@ -745,7 +768,7 @@ footer .copy-right {
     display: none;
     width: 100%;
     margin-top: 5px;
-    background-color: #575658;
+    background-color: #000000;
     margin-bottom: 100px;
   }
   header nav ul {
@@ -761,7 +784,8 @@ footer .copy-right {
   header nav ul li a {
     display: block;
     width: 100%;
-    font-size: 22px;
+    font-size: 19px;
+    font-weight: normal;
   }
   header nav ul li a::after {
     width: 100%;
@@ -769,12 +793,7 @@ footer .copy-right {
   }
   header #toggle-btn {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: block;
     border: none;
     border-radius: 5px;
     padding: 15px 20px;
@@ -782,20 +801,22 @@ footer .copy-right {
   }
   header #toggle-btn::before, header #toggle-btn::after {
     position: absolute;
+    left: 0;
     content: '';
-    width: 90%;
+    width: 85%;
     height: 2px;
-    background-color: #5dfd00;
+    background-color: #ecfd00;
     -webkit-transition: 0.4s linear;
     transition: 0.4s linear;
   }
   header #toggle-btn::before {
-    -webkit-box-shadow: 0 7.5px 0 #5dfd00;
-            box-shadow: 0 7.5px 0 #5dfd00;
+    -webkit-box-shadow: 0 7.5px 0 #ecfd00;
+            box-shadow: 0 7.5px 0 #ecfd00;
     -webkit-transform: translateY(-9px);
             transform: translateY(-9px);
   }
   header #toggle-btn::after {
+    width: 60%;
     -webkit-transform: translateY(6px);
             transform: translateY(6px);
   }

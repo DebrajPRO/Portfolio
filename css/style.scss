@@ -251,17 +251,35 @@ header{
                   .progress-bar span{
                     position: absolute;
                     background-image: linear-gradient(to right, #e1f84d, #f0db2d, #fabc1a, #ff9d1c, #ff7d2a, #fe6c2b, #fd592f, #fa4333, #fc3929, #fd2d1f, #fe1e12, #ff0000);
-                    width: 90%;
                     height: 5px;
                     border-radius: 10px;
                     transform: scaleX(0);
                     transform-origin: left;
                     animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
                   }
+                  .progress-bar .html{
+                      width: 95%;
+                  }
+
+                  .progress-bar .css{
+                    width: 80%;
+                  }
+                  .progress-bar .sass{
+                    width: 70%;
+                  }
+                  .progress-bar .boostrap{
+                    width: 74%;
+                  }
+                  .progress-bar .jvst{
+                    width: 20%;
+                  }
+                  .progress-bar .jquery{
+                    width: 48%;
+                  }
                   
                   @keyframes animate {
                     100%{
-                      transform:scaleX(1)
+                      transform:scaleX(1);
                     }
                   }
             }
@@ -688,7 +706,7 @@ footer{
     /*-----------------------------------------*/
 
     header{
-        background-color: #575658;
+        background-color: #000000;
         border-bottom: 1px solid #999;
         padding: 9px 13px;
         .logo{
@@ -704,7 +722,7 @@ footer{
             display: none;
             width: 100%;
             margin-top: 5px;
-            background-color: #575658;;
+            background-color: #000000;
             margin-bottom: 100px;
             ul{
                 flex-direction: column;
@@ -714,7 +732,8 @@ footer{
                     a{
                         display: block;
                         width: 100%;
-                        font-size: 22px;
+                        font-size: 19px;
+                        font-weight: normal;
                         &::after{
                             width: 100%;
                             height: 1px;
@@ -723,27 +742,29 @@ footer{
                 }
             }
         }
+
         #toggle-btn{
             position: relative;
-            display: flex;
-            justify-content: center;
+            display: block;
             border: none;
             border-radius: 5px;
             padding: 15px 20px;
             background: none;
             &::before, &::after{
                 position: absolute;
+                left: 0;
                 content: '';
-                width: 90%;
+                width: 85%;
                 height: 2px;
-                background-color: #5dfd00;
+                background-color: #ecfd00;
                 transition: 0.4s linear;
             }
             &::before{
-                box-shadow: 0 7.5px 0 #5dfd00;
+                box-shadow: 0 7.5px 0 #ecfd00;
                 transform: translateY(-9px);
             }
             &::after{
+                width: 60%;
                 transform: translateY(6px);
             }
         }
@@ -766,6 +787,7 @@ footer{
         }
     
     }
+
 
     /*-----------------------------------------*/
 
