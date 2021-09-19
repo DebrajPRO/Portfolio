@@ -764,7 +764,7 @@ footer{
                 transform: translateY(-9px);
             }
             &::after{
-                width: 60%;
+                width: 50%;
                 transform: translateY(6px);
             }
         }
@@ -777,6 +777,7 @@ footer{
                 transform: rotate(45deg);
             }
             &::after{
+                width: 85%;
                 height: 1px;
                 background-color: #ff0000;
                 transform: translateY(0);

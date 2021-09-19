@@ -816,7 +816,7 @@ footer .copy-right {
             transform: translateY(-9px);
   }
   header #toggle-btn::after {
-    width: 60%;
+    width: 50%;
     -webkit-transform: translateY(6px);
             transform: translateY(6px);
   }
@@ -831,6 +831,7 @@ footer .copy-right {
             transform: rotate(45deg);
   }
   header #toggle-btn.active::after {
+    width: 85%;
     height: 1px;
     background-color: #ff0000;
     -webkit-transform: translateY(0);
