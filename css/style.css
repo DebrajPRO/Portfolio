@@ -546,6 +546,10 @@ footer .copy-right {
   margin-top: 30px;
 }
 
+footer .copy-right p {
+  font-size: 12px;
+}
+
 @media only screen and (max-width: 1150px) {
   .container {
     max-width: 950px;
@@ -1027,7 +1031,7 @@ footer .copy-right {
     margin: 6px 0px 10px;
   }
   footer .copy-right p {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 
@@ -1133,7 +1137,7 @@ footer .copy-right {
     font-size: medium;
   }
   footer .copy-right p {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
