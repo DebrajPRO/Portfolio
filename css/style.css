@@ -159,6 +159,10 @@ header nav li a:hover:after {
   width: 100%;
 }
 
+header nav li a:visited {
+  color: #d40e36;
+}
+
 header #toggle-btn {
   display: none;
 }

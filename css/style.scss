@@ -128,6 +128,9 @@ header{
                     content: '';
                     width: 100%;
                 }
+                &:visited{
+                    color: #d40e36;  
+                }
             }
         }
     }
