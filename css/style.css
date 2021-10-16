@@ -986,8 +986,7 @@ footer .copy-right p {
   }
   /*-----------------------------------------*/
   .other.bg-img-use {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#00000059), to(#00000050)), url("https://images.pexels.com/photos/7988113/pexels-photo-7988113.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-image: linear-gradient(to bottom, #00000059, #00000050), url("https://images.pexels.com/photos/7988113/pexels-photo-7988113.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-image: url("https://images.pexels.com/photos/7988113/pexels-photo-7988113.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   }
   .other .text-b {
     height: 250px;
