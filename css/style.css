@@ -237,19 +237,23 @@ header #toggle-btn {
   position: relative;
 }
 
+.skill .item-img .bg-img a {
+  display: block;
+}
+
 .skill .item-img .bg-img img {
-  width: 450px;
-  height: 300px;
+  width: 100%;
 }
 
 .skill .item-img .bg-img .text {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 3px;
   z-index: 1;
-  padding: 7px 25px;
+  padding: 5px 18px;
   color: #ffffff;
-  background: #444;
+  background: #44444485;
+  font-size: small;
 }
 
 .skill .item-skill {
