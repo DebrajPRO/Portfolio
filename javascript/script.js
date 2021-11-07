@@ -22,8 +22,3 @@ collapseNav.onclick = function(){
 };
 
 
-
-
-// fade div animate //
-
-AOS.init();
