@@ -20,3 +20,10 @@ collapseNav.onclick = function(){
 	collapseNav.classList.toggle('active');
 	
 };
+
+
+
+
+// fade div animate //
+
+AOS.init();
